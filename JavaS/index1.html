@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Array in Descending Order</title>
+</head>
+<body>
+    <button onclick="sortDescending()">Sort in Descending Order</button>
+    <p id="output"></p>
+
+    <script>
+        function sortDescending() {
+            const originalArray = [5, 2, 9, 1, 5, 6];
+            const sortedArray = originalArray.sort(function(a, b) {
+                return b - a; // Compare in descending order
+            });
+
+            document.getElementById('output').textContent = sortedArray.join(', ');
+        }
+    </script>
+</body>
+</html>
